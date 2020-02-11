@@ -1,0 +1,20 @@
+/** @format */
+
+.nav-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 15px 0px;
+}
+
+.nav-bar .nav-bar__page-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page-list .page-list__page-btn i {
+  font-size: 20px;
+}

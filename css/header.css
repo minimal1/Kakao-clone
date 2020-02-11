@@ -1,0 +1,26 @@
+/** @format */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header .header__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.header__column .header__icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-list .icon-list__icon {
+  margin-left: 25px;
+}
+
+.icon-list .icon-list__icon i {
+  font-size: 20px;
+}
