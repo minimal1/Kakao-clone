@@ -1,0 +1,31 @@
+/** @format */
+
+.find__header-list {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.friend-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-add i {
+  font-size: 20px;
+}
+
+.friend-add .friend-add__add-title {
+  margin-top: 20px;
+  opacity: 0.8;
+  font-size: 12px;
+}
+.find .find__recommnded-list {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
