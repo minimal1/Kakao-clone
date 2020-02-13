@@ -1,0 +1,28 @@
+/** @format */
+
+body.chat-body {
+  padding: 0px;
+}
+
+.chat-body .status-bar {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.chat-body .header {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  border-bottom: 0.1px solid #f0f0f0;
+}
+
+.chat-main {
+  background-image: url('../img/chatBg.png');
+  min-height: 1000vh;
+}
+
+.write-bar {
+  position: fixed;
+  bottom: 0px;
+}

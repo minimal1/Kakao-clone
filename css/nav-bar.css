@@ -18,3 +18,22 @@
 .page-list .page-list__page-btn i {
   font-size: 20px;
 }
+
+.page-list__page-btn a {
+  position: relative;
+}
+
+.chats-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: white;
+  font-size: 10px;
+  background-color: #e65e3e;
+}

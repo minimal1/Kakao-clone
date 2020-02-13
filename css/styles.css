@@ -10,6 +10,8 @@
 @import 'friends.css';
 @import 'find.css';
 @import 'more.css';
+@import 'settings.css';
+@import 'chat.css';
 
 * {
   box-sizing: border-box;
@@ -23,7 +25,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 a {
   color: #030303;
   text-decoration: none;
