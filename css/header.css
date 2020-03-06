@@ -4,13 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-.header__column {
+.header .header__column {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.header .header__back-btn {
+  font-size: 20px;
+  margin-right: 20px;
 }
 
 .header .header__title {
@@ -18,21 +22,8 @@
   font-weight: 600;
 }
 
-.header .header__back-btn {
-  width: 15px;
-  height: 15px;
-  margin-right: 15px;
-}
-.header__column .header__icon-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.icon-list .icon-list__icon {
-  margin-left: 25px;
-}
-
-.icon-list .icon-list__icon i {
+.header .header__icon {
   font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
 }

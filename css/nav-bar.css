@@ -1,39 +1,39 @@
 /** @format */
 
-.nav-bar {
+.nav {
   position: fixed;
-  left: 0;
-  bottom: 0px;
   width: 100%;
+  bottom: 0;
+  left: 0;
   background-color: #fcfcfc;
-  padding: 15px 0px;
+  border-top: 1px solid #f8f8f8;
+  padding: 25px 40px;
 }
 
-.nav-bar .nav-bar__page-list {
+.nav .nav__list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.page-list .page-list__page-btn i {
-  font-size: 20px;
+.nav__list-item i {
+  font-size: 22px;
 }
 
-.page-list__page-btn a {
+.nav .nav__link {
   position: relative;
 }
 
-.chats-count {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav .nav__badge {
   position: absolute;
-  top: -7px;
-  right: -7px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -6px;
+  right: -6px;
+  background-color: #e95e40;
   color: white;
-  font-size: 10px;
-  background-color: #e65e3e;
+  border-radius: 50%;
+  font-size: 8px;
+  width: 15px;
+  height: 15px;
 }

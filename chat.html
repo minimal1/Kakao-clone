@@ -9,17 +9,18 @@
       src="https://kit.fontawesome.com/0ac70a1dad.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <title>Chats | Kakao Clone</title>
+        <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Chat | Kokoa talk</title>
   </head>
-  <body class="chat-body">
+  <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span class="status-bar__time">13:53</span>
+        <span class="status-bar__timestamp">13:53</span>
       </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-down"></i>
+        <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
@@ -27,28 +28,65 @@
     </div>
     <header class="header">
       <div class="header__column">
-        <a class="header__back-btn" href="index.html">
+        <a href="index.html" class="header__back-btn">
           <i class="fas fa-arrow-left"></i>
         </a>
-        <span class="header__title">Best Friend</span>
+        <h1 class="header__title">Sue</h1>
       </div>
       <div class="header__column">
-        <ul class="header__icon-list icon-list">
-          <li class="icon-list__icon">
-            <i class="fas fa-search"></i>
-          </li>
-          <li class="icon-list__icon">
-            <i class="fas fa-bars"></i>
-          </li>
-        </ul>
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-bars"></i>
+        </span>
       </div>
     </header>
-    <main class="chat-main"></main>
-    <div class="write-bar">
-      <i class="far fa-plus-square"></i>
-      <input type="text" />
-      <i class="far fa-smile"></i>
-      <i class="fas fa-microphone"></i>
+    <main class="chat-screen">
+      <ul class="chat-screen__messages">
+        <span class="chat-screen__timestamp">Friday, January 11, 2019</span>
+        <li class="chat-screen__incoming-message message">
+          <div class="message__column">
+            <img src="img/avatar.jpeg" class="message__avatar" />
+            <div class="message__content">
+              <span class="message__author">Sue</span>
+              <span class="message__bubble">Whassup</span>
+            </div>
+          </div>
+        </li>
+        <li class="chat-screen__outgoing-message message">
+          <div class="message__column">
+            <div class="message__content">
+              <span class="message__bubble">
+                I'm doin good!
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="chat-screen__incoming-message message">
+          <div class="message__column">
+            <img src="img/avatar.jpeg" class="message__avatar" />
+            <div class="message__content">
+              <span class="message__author">Sue</span>
+              <span class="message__bubble">I Love You!</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="chat-write">
+      <input
+        type="text"
+        placeholder="Send a message"
+        class="chat-write__input"
+      />
+      <div class="chat-write__icon-left chat-write__icon">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat-write__icon-right chat-write__icon">
+        <i class="far fa-smile-wink"></i>
+        <i class="fas fa-microphone"></i>
+      </div>
     </div>
   </body>
 </html>

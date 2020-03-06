@@ -1,8 +1,14 @@
 /** @format */
 
-.frineds__plus-friend {
-  margin: 15px 0px;
+.friends .friends__plus {
+  margin: 20px 0px;
   padding: 15px 0px;
-  border-top: 0.1px solid #f0f0f0;
-  border-bottom: 0.1px solid #f0f0f0;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.friends .friends__title {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 15px;
 }
