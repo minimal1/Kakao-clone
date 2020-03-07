@@ -1,0 +1,207 @@
+/** @format */
+
+.header-wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  z-index: 2;
+}
+
+.chat-body {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url('../img/chatBg.png');
+  min-height: 1000vh;
+  padding-top: 100px;
+}
+
+.chat-body .status-bar,
+.chat-body .header {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.chat-write {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-write .chat-write__input {
+  background-color: #fcfcfc;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  font-size: 14px;
+  transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  }
+  25% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 10px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  }
+  50% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 4px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  }
+  75% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 10px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  }
+  100% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  }
+}
+
+.chat-write .chat-write__input:focus {
+  outline: none;
+  transform: translateY(-50px);
+  width: 80%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  animation: float 1s ease-in-out infinite forwards;
+}
+
+.chat-write__icon {
+  position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.chat-write__input:focus ~ .chat-write__icon {
+  opacity: 0;
+}
+
+.chat-write__icon-left {
+  left: 20px;
+}
+
+.chat-write__icon-right {
+  right: 10px;
+}
+
+.chat-screen .chat-screen__messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.chat-screen .chat-screen__timestamp {
+  margin: 30px 0px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+}
+
+.chat-screen .message {
+  margin-bottom: 30px;
+}
+
+.message .message__column {
+  display: flex;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+.message .message__avatar {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  animation: spin 1s linear infinite forwards;
+}
+
+.message .message__bubble {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+}
+
+.message .message__author {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.chat-screen .chat-screen__incoming-message {
+  align-self: flex-start;
+}
+
+.chat-screen .chat-screen__outgoing-message {
+  align-self: flex-end;
+}
+
+.chat-screen__incoming-message .message__bubble {
+  border-bottom-left-radius: 0px;
+  background-image: linear-gradient(to right, #5c258d, #4389a2);
+}
+.chat-screen__outgoing-message .message__bubble {
+  border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to left, #00c6ff, #0072ff);
+}
+
+@keyframes incoming-anim {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.chat-screen__incoming-message {
+  animation: incoming-anim 0.5s ease-in-out forwards;
+}
+
+@keyframes outgoing-anim {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.chat-screen__outgoing-message {
+  animation: outgoing-anim 0.5s ease-in-out forwards;
+}

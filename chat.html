@@ -9,39 +9,42 @@
       src="https://kit.fontawesome.com/0ac70a1dad.js"
       crossorigin="anonymous"
     ></script>
-        <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Chat | Kokoa talk</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__timestamp">13:53</span>
+  <body class="chat-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__timestamp">13:53</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__column">
+          <a href="index.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Sue</h1>
+        </div>
+        <div class="header__column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__column">
-        <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1 class="header__title">Sue</h1>
-      </div>
-      <div class="header__column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
+
     <main class="chat-screen">
       <ul class="chat-screen__messages">
         <span class="chat-screen__timestamp">Friday, January 11, 2019</span>
@@ -49,8 +52,8 @@
           <div class="message__column">
             <img src="img/avatar.jpeg" class="message__avatar" />
             <div class="message__content">
-              <span class="message__author">Sue</span>
               <span class="message__bubble">Whassup</span>
+              <span class="message__author">Sue</span>
             </div>
           </div>
         </li>
@@ -67,8 +70,8 @@
           <div class="message__column">
             <img src="img/avatar.jpeg" class="message__avatar" />
             <div class="message__content">
-              <span class="message__author">Sue</span>
               <span class="message__bubble">I Love You!</span>
+              <span class="message__author">Sue</span>
             </div>
           </div>
         </li>

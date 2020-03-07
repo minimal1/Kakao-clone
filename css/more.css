@@ -1,0 +1,66 @@
+/** @format */
+
+.more .more__friend {
+  margin-bottom: 30px;
+}
+
+.more .more__header-list {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.more .more__btn,
+.more .suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.more .more__btn-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.more .more__btn-title {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.more .more__section {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.more .more__section-title {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.more .more__suggestions {
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.suggestion .suggestion__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #fae400;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.suggestion .suggestion__title {
+  font-size: 14px;
+  opacity: 0.7;
+}

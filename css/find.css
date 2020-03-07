@@ -1,0 +1,40 @@
+/** @format */
+
+.find .find__header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.find .find__header-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-btn .header-btn__icon {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.header-btn .header-btn__title {
+  font-size: 14px;
+}
+
+.find .find__section {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #f8f8f8;
+}
+
+.find .find__section-title {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.find .find__list-item {
+  margin-bottom: 15px;
+}
